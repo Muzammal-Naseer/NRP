@@ -8,6 +8,8 @@ Pytorch Implementation of "Self-supervised Approach for Adversarial Robustness" 
 3) [How to run SSP Attack](#How to run SSP Attack) <a name="How to run SSP Attack"/>
 4) [Pretrained-Purifier](#Pretrained-Purifier) <a name="Pretrained-Purifier"/>
 5) [How to purify Adversarial Images](#How to purify Adversarial Images) <a name="How to purify Adversarial Images"/>
+6) [How to by-pass NRP using Straight through Estimation](#How to by-pass NRP using Straight through Estimation)<a name="How to by-pass NRP using Straight through Estimation"/>
+7) [NRP as Dynamic Defense](#NRP as Dynamic Defense)<a name="NRP as Dynamic Defense"/>
 4) [Citation](#Citation)  <a name="Citation"/>
 
 ## Contributions
@@ -24,10 +26,9 @@ Pytorch Implementation of "Self-supervised Approach for Adversarial Robustness" 
 NRP can be used to defend against adversarial attacks under following threat models.
 1) Attacker is unaware of the defense and the backbone model (This is also known as black-box setting).
 2) Attacker knows about the defense but unaware of the NRP and backbone model architectures. Attacker trains a local copy of the defense and tries to bypass using e.g. straight through estimator method.
+3) **Can NRP defend against white-box attack?** Yes, but with dynamic inference. When attacker has full knowledge of the architecture and pretrained weights of NRP and its backbone model then attacker can by-pass the defense using e.g. straight thought estimation. In such case, we can add random noise before sending the input sample to NRP.
 
-#### Can NRP defend against white-box attack
-
-Yes, but with dynamic inference. When attacker has full knowledge of the architecture and pretrained weights of NRP and its backbone model then attacker can by-pass the defense using e.g. straight thought estimation. In such case, we can add random noise before sending the input sample to NRP.
+## How to run SSP Attack
 
 ## Pretrained-Purifier
 
@@ -35,11 +36,13 @@ Download pretrained purifiers from [here](https://drive.google.com/open?id=1H_o9
 
 These purifiers are based desnet (around 14Million parameters) and ResNet (only 1.2Million parameters) based architecture. They output the purified sample of the same size of input.
 
+## How to purify Adversarial Images
 
+## How to by-pass NRP using Straight through Estimation
 
+## NRP as Dynamic Defense
 
-
-
+## Citation
 
 
 
