@@ -5,10 +5,10 @@ Pytorch Implementation of "Self-supervised Approach for Adversarial Robustness" 
 ### Table of Contents  
 1) [Contributions](#Contributions) <a name="Contributions"/>
 2) [Claims](#Claims) <a name="Claims"/>
-3) [How to run SSP Attack](#SSP) <a name="SSP"/>
-4) [Pretrained-Purifier](#Pretrained-Purifier) <a name="Pretrained-Purifier"/>
-5) [How to purify Adversarial Images](#purify) <a name="purify"/>
-6) [How to by-pass NRP using Straight through Estimation](#by-pass-NRP)<a name="by-pass-NRP"/>
+3) [How to run SSP Attack?](#SSP) <a name="SSP"/>
+4) [Pretrained-Purifiers](#Pretrained-Purifier) <a name="Pretrained-Purifier"/>
+5) [How to purify Adversarial Images?](#purify) <a name="purify"/>
+6) [How to by-pass NRP using Straight through Estimation?](#by-pass-NRP)<a name="by-pass-NRP"/>
 7) [NRP as Dynamic Defense](#Dynamic-Defense)<a name="Dynamic-Defense"/>
 4) [Citation](#Citation)  <a name="Citation"/>
 
@@ -28,17 +28,17 @@ NRP can be used to defend against adversarial attacks under following threat mod
 2) Attacker knows about the defense but unaware of the NRP and backbone model architectures. Attacker trains a local copy of the defense and tries to bypass using e.g. straight through estimator method.
 3) **Can NRP defend against white-box attack?** Yes, but with dynamic inference. When attacker has full knowledge of the architecture and pretrained weights of NRP and its backbone model then attacker can by-pass the defense using e.g. straight thought estimation. In such case, we can add random noise before sending the input sample to NRP.
 
-## How to run SSP Attack
+## How to run SSP Attack?
 
-## Pretrained-Purifier
+## Pretrained-Purifiers
 
 Download pretrained purifiers from [here](https://drive.google.com/open?id=1H_o90xtHYbK7M3bMMm_RtwTtCdDmaPJY) to 'saved_models' folder.
 
 These purifiers are based desnet (around 14Million parameters) and ResNet (only 1.2Million parameters) based architecture. They output the purified sample of the same size of input.
 
-## How to purify Adversarial Images
+## How to purify Adversarial Images?
 
-## How to by-pass NRP using Straight through Estimation
+## How to by-pass NRP using Straight through Estimation?
 
 ## NRP as Dynamic Defense
 
