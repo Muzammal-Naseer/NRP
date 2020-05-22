@@ -5,8 +5,9 @@ Pytorch Implementation of "Self-supervised Approach for Adversarial Robustness" 
 ### Table of Contents  
 1) [Contributions](#Contributions) <a name="Contributions"/>
 2) [Claims](#Claims) <a name="Claims"/>
-2) [Usage](#Usage) <a name="Usage"/>
-3) [Pretrained-Purifier](#Pretrained-Purifier) <a name="Pretrained-Purifier"/>
+3) [How to run SSP Attack](#How to run SSP Attack) <a name="How to run SSP Attack"/>
+4) [Pretrained-Purifier](#Pretrained-Purifier) <a name="Pretrained-Purifier"/>
+5) [How to purify Adversarial Images](#How to purify Adversarial Images) <a name="How to purify Adversarial Images"/>
 4) [Citation](#Citation)  <a name="Citation"/>
 
 ## Contributions
@@ -17,5 +18,28 @@ Pytorch Implementation of "Self-supervised Approach for Adversarial Robustness" 
     * NRP does not require label data.
 
 ![Learning Algo](/assets/DefenseOverview-min3.png)
+
+## Claims
+
+NRP can be used to defend against adversarial attacks under following threat models.
+1) Attacker is unaware of the defense and the backbone model (This is also known as black-box setting).
+2) Attacker knows about the defense but unaware of the NRP and backbone model architectures. Attacker trains a local copy of the defense and tries to bypass using e.g. straight through estimator method.
+
+#### Can NRP defend against white-box attack
+
+Yes, but with dynamic inference. When attacker has full knowledge of the architecture and pretrained weights of NRP and its backbone model then attacker can by-pass the defense using e.g. straight thought estimation. In such case, we can add random noise before sending the input sample to NRP.
+
+## Pretrained-Purifier
+
+Download pretrained purifiers from [here](https://drive.google.com/open?id=1H_o90xtHYbK7M3bMMm_RtwTtCdDmaPJY) to 'saved_models' folder.
+
+These purifiers are based desnet (around 14Million parameters) and ResNet (only 1.2Million parameters) based architecture. They output the purified sample of the same size of input.
+
+
+
+
+
+
+
 
 
