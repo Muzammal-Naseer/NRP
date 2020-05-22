@@ -5,11 +5,11 @@ Pytorch Implementation of "Self-supervised Approach for Adversarial Robustness" 
 ### Table of Contents  
 1) [Contributions](#Contributions) <a name="Contributions"/>
 2) [Claims](#Claims) <a name="Claims"/>
-3) [How to run SSP Attack](#How to run SSP Attack) <a name="How to run SSP Attack"/>
+3) [How to run SSP Attack](#SSP) <a name="SSP"/>
 4) [Pretrained-Purifier](#Pretrained-Purifier) <a name="Pretrained-Purifier"/>
-5) [How to purify Adversarial Images](#How to purify Adversarial Images) <a name="How to purify Adversarial Images"/>
-6) [How to by-pass NRP using Straight through Estimation](#How to by-pass NRP using Straight through Estimation)<a name="How to by-pass NRP using Straight through Estimation"/>
-7) [NRP as Dynamic Defense](#NRP as Dynamic Defense)<a name="NRP as Dynamic Defense"/>
+5) [How to purify Adversarial Images](#purify) <a name="purify"/>
+6) [How to by-pass NRP using Straight through Estimation](#by-pass-NRP)<a name="by-pass-NRP"/>
+7) [NRP as Dynamic Defense](#Dynamic-Defense)<a name="Dynamic-Defense"/>
 4) [Citation](#Citation)  <a name="Citation"/>
 
 ## Contributions
