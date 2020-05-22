@@ -32,7 +32,7 @@ NRP can be used to defend against adversarial attacks under following threat mod
 
 ## Pretrained-Purifiers
 
-Download pretrained purifiers from [here](https://drive.google.com/open?id=1H_o90xtHYbK7M3bMMm_RtwTtCdDmaPJY) to 'saved_models' folder.
+Download pretrained purifiers from [here](https://drive.google.com) to 'saved_models' folder.
 
 These purifiers are based desnet (around 14Million parameters) and ResNet (only 1.2Million parameters) based architecture. They output the purified sample of the same size of input.
 
