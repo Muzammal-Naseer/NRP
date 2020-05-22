@@ -16,6 +16,6 @@ Pytorch Implementation of "Self-supervised Approach for Adversarial Robustness" 
     * NRP does not require access to original data distribution. For example, NRP trained on MS-COCO dataset can successfully defend ImageNet models.
     * NRP does not require label data.
 
-![Learning Algo](/assets/defenseoverview-min3.png)
+![Learning Algo](/assets/DefenseOverview-min3.png)
 
 
