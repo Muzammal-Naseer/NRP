@@ -6,13 +6,13 @@
 1) [Contributions](#Contributions) <a name="Contributions"/>
 2) [Claims](#Claims) <a name="Claims"/>
 3) [How to run SSP Attack?](#SSP) <a name="SSP"/>
-4) [Pretrained-Purifiers](#Pretrained-Purifier) <a name="Pretrained-Purifier"/>
-5) [How to purify Adversarial Images?](#purify) <a name="purify"/>
-6) [How to by-pass NRP using Straight through Estimation?](#by-pass-NRP)<a name="by-pass-NRP"/>
-7) [NRP as Dynamic Defense](#Dynamic-Defense)<a name="Dynamic-Defense"/>
-8) [What Can You Do?](#What-Can-you-do) <a name="What-Can-you-do"/>
+4) [Pretrained Purifiers](#Pretrained) <a name="Pretrained"/>
+5) [How to purify Adversarial Images?](#Purify) <a name="Purify"/>
+6) [How to by-pass NRP using Straight through Estimation?](#BypassNRP)<a name="BypassNRP"/>
+7) [NRP as Dynamic Defense](#Dynamic)<a name="Dynamic"/>
+8) [What Can You Do?](#FutureResreach) <a name="FutureResreach"/>
 9) [Citation](#Citation)  <a name="Citation"/>
-10) [An Example of Purification of Unseen Adversaries](#example) <a name="example"/>
+10) [An Example of Purification of Unseen Adversaries](#Example) <a name="Example"/>
 
 
 ## Contributions
@@ -37,13 +37,13 @@ You don't need to worry about labels, just save clean images in a directory and 
   python ssp.py ----sourcedir clean_imgs --eps 16 --iters 100
 ```
 
-## Pretrained-Purifiers
+## Pretrained
 
 Download pretrained purifiers from [here](https://drive.google.com/file/d/1qWqUS9MKGLC5GxQiqqZsw7z72XCSB8Oc/view?usp=sharing) to 'pretrained_purifiers' folder.
 
 These purifiers are based desnet (around 14Million parameters) and ResNet (only 1.2Million parameters) based architecture. They output the purified sample of the same size of input.
 
-## How to purify Adversarial Images?
+## Purify
 You can create adversarial images by using [Cross-Domain Attack](https://github.com/Muzammal-Naseer/Cross-domain-perturbations) or any other attack of your choice. Once you have save the adversarial images then run the following command to purify them:
 
 ```
@@ -51,13 +51,13 @@ You can create adversarial images by using [Cross-Domain Attack](https://github.
 ```
 Purifiers are trained to handle $l_inf <=16$ but you can try $l_2$ bounded attacks as well.
 
-## How to by-pass NRP using Straight through Estimation?
+## BypassNRP
 You can by-pass NRP using backpass method. We provide an example of such an attack using targeted PGD:
 ```
   python bypass_nrp.py ----test_dir val/ --purifier NRP --eps 16 --model_type res152
 ```
 
-## NRP as Dynamic Defense
+## Dynamic
 Dynamic inference can help against whitebox attacks. We use a very simple methodology: Perturbe the incoming sample with random noise and then purify it using NRP. The drawback is that we lose some clean accuracy.
 
 ```
@@ -65,7 +65,7 @@ Dynamic inference can help against whitebox attacks. We use a very simple method
 ```
 
 
-## What Can You Do?
+## FutureResreach
 You can build on our work with the following objectives in mind:
    * Can you create a blackbox attack (no knowledge of defense or backbone) that is powerful enough to break our defense?
    * Can you create a graybox attack (defense is known but no knowledge of architecture of NRP and its backbone) that can break our defense. We provide two purifier to test such attack. You can use one in your attack and then test on the other one?
@@ -90,7 +90,7 @@ Muzammal Naseer - muzammal.naseer@anu.edu.au
 Suggestions and questions are welcome!
 
 
-## An Example of Purification of Unseen Adversaries
+## Example
 These adversaris are never seen by NRP during training. First row shows adversarial images while 2nd shows purified images.
 ![a](/assets/robust_adv.jpg)
 ![b](/assets/robust_adv_fixed.jpg)
