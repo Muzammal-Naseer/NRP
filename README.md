@@ -40,6 +40,13 @@ Download pretrained purifiers from [here](https://drive.google.com/file/d/1qWqUS
 
 These purifiers are based desnet (around 14Million parameters) and ResNet (only 1.2Million parameters) based architecture. They output the purified sample of the same size of input.
 
+You can create adversarial images by using [Cross-Domain Attack](https://github.com/Muzammal-Naseer/Cross-domain-perturbations) or any other attack of your choice. Once you have save the adversarial images then run the following command to purify them:
+
+```
+  python purify.py ----dir adv_images --purifier NRP
+```
+
+
 ## How to purify Adversarial Images?
 
 ## How to by-pass NRP using Straight through Estimation?
