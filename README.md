@@ -10,8 +10,9 @@
 5) [How to purify Adversarial Images?](#purify) <a name="purify"/>
 6) [How to by-pass NRP using Straight through Estimation?](#by-pass-NRP)<a name="by-pass-NRP"/>
 7) [NRP as Dynamic Defense](#Dynamic-Defense)<a name="Dynamic-Defense"/>
-8) [Citation](#Citation)  <a name="Citation"/>
-9) [What Can You Do?](#What-Can-you-do) <a name="What-Can-you-do"/>
+8) [What Can You Do?](#What-Can-you-do) <a name="What-Can-you-do"/>
+9) [Citation](#Citation)  <a name="Citation"/>
+
 
 ## Contributions
 
@@ -62,7 +63,16 @@ Dynamic inference can help against whitebox attacks. We use a very simple method
   python purify.py ----dir adv_images --purifier NRP --dynamic
 ```
 
+
+## What Can You Do?
+You can build on our work with the following objectives in mind:
+   * Can you create a blackbox attack (no knowledge of defense or backbone) that is powerful enough to break our defense?
+   * Can you create a graybox attack (defense is known but no knowledge of architecture of NRP and its backbone) that can break our defense. We provide two purifier to test such attack. You can use one in your attack and then test on the other one?
+   * Can you break our dynamic inference?
+   * Can you prepare similar defense for [unrestricted attack](https://arxiv.org/abs/1807.01216).
+   
 ## Citation
+Please consider citing our work.
 ```
 @InProceedings{Naseer_2020_CVPR,
 author = {Naseer, Muzammal and Khan, Salman and Hayat, Munawar and Khan, Fahad Shahbaz and Porikli, Fatih},
@@ -72,11 +82,6 @@ month = {June},
 year = {2020}
 }
 ```
-
-## What Can You Do?
-   * Can you create a blackbox attack (no knowledge of defense or backbone) that is powerful enough to break our defense?
-   * Can you create a graybox attack (defense is known but no knowledge of architecture of NRP and its backbone) that can break our defense. We provide two purifier to test such attack. You can use one in your attack and then test on the other one?
-   * Can you break our dynamic inference?
 
 ## Contact
 Muzammal Naseer - muzammal.naseer@anu.edu.au 
