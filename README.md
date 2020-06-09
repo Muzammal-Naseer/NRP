@@ -31,7 +31,7 @@ NRP can be used to defend against adversarial attacks under following threat mod
 2) Attacker knows about the defense but unaware of the NRP and backbone model architectures. Attacker trains a local copy of the defense and tries to bypass using e.g. straight through estimator method.
 3) **Can NRP defend against white-box attack?** Yes, but with dynamic inference. When attacker has full knowledge of the architecture and pretrained weights of NRP and its backbone model then attacker can by-pass the defense using e.g. straight thought estimation. In such case, we can add random noise before sending the input sample to NRP.
 
-## SSP
+## SSP (How to run SSP Attack?)
 You don't need to worry about labels, just save clean images in a directory and run the following command:
 ```
   python ssp.py ----sourcedir clean_imgs --eps 16 --iters 100
