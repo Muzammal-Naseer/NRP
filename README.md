@@ -12,9 +12,9 @@
 7) [NRP as Dynamic Defense](#Dynamic-Defense)<a name="Dynamic-Defense"/>
 8) [Citation](#Citation)  <a name="Citation"/>
 9) **What Can you do?**
-   * Can you create a blackbox attack (no knowledge of defense or backbone) powerful enough to break our defense
+   * Can you create a blackbox attack (no knowledge of defense or backbone) that is powerful enough to break our defense.
    * Can you create a graybox attack (defense is known but no knowledge of architecture of NRP and its backbone) that can break our defense. We provide two purifier to test such attack. You can use one in your attack and then test on the other one.
-   * Can you break dynamic inference.
+   * Can you break our dynamic inference.
 
 ## Contributions
 
@@ -66,3 +66,17 @@ Dynamic inference can help against whitebox attacks. We use a very simple method
 ```
 
 ## Citation
+```
+@InProceedings{Naseer_2020_CVPR,
+author = {Naseer, Muzammal and Khan, Salman and Hayat, Munawar and Khan, Fahad Shahbaz and Porikli, Fatih},
+title = {A Self-supervised Approach for Adversarial Robustness},
+booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2020}
+}
+```
+
+## Contact
+Muzammal Naseer - muzammal.naseer@anu.edu.au 
+<br/>
+Suggestions and questions are welcome!
