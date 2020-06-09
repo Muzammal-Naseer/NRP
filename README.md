@@ -8,11 +8,11 @@
 3) [How to run SSP Attack?](#SSP) <a name="SSP"/>
 4) [Pretrained-Purifiers](#Pretrained-Purifier) <a name="Pretrained-Purifier"/>
 5) [How to purify Adversarial Images?](#purify) <a name="purify"/>
-   * [An Example of Purification of Unseen Adversaries](#unseen-adv) <a name="unseen-adv"/>
 6) [How to by-pass NRP using Straight through Estimation?](#by-pass-NRP)<a name="by-pass-NRP"/>
 7) [NRP as Dynamic Defense](#Dynamic-Defense)<a name="Dynamic-Defense"/>
 8) [What Can You Do?](#What-Can-you-do) <a name="What-Can-you-do"/>
 9) [Citation](#Citation)  <a name="Citation"/>
+10) [An Example of Purification of Unseen Adversaries](#unseen-adv) <a name="unseen-adv"/>
 
 
 ## Contributions
@@ -51,11 +51,6 @@ You can create adversarial images by using [Cross-Domain Attack](https://github.
 ```
 Purifiers are trained to handle $l_inf <=16$ but you can try $l_2$ bounded attacks as well.
 
-### An Example of Purification of Unseen Adversaries
-These adversaris are never seen by NRP during training. First row shows adversarial images while 2nd shows purified images.
-![a](/assets/robust_adv.jpg)
-![b](/assets/robust_adv_fixed.jpg)
-
 ## How to by-pass NRP using Straight through Estimation?
 You can by-pass NRP using backpass method. We provide an example of such an attack using targeted PGD:
 ```
@@ -88,6 +83,10 @@ month = {June},
 year = {2020}
 }
 ```
+## An Example of Purification of Unseen Adversaries
+These adversaris are never seen by NRP during training. First row shows adversarial images while 2nd shows purified images.
+![a](/assets/robust_adv.jpg)
+![b](/assets/robust_adv_fixed.jpg)
 
 ## Contact
 Muzammal Naseer - muzammal.naseer@anu.edu.au 
