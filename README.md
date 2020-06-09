@@ -12,7 +12,7 @@
 7) [NRP as Dynamic Defense](#Dynamic-Defense)<a name="Dynamic-Defense"/>
 8) [What Can You Do?](#What-Can-you-do) <a name="What-Can-you-do"/>
 9) [Citation](#Citation)  <a name="Citation"/>
-10) [An Example of Purification of Unseen Adversaries](#unseen-adv) <a name="unseen-adv"/>
+10) [An Example of Purification of Unseen Adversaries](#exampe) <a name="exampe"/>
 
 
 ## Contributions
@@ -83,12 +83,14 @@ month = {June},
 year = {2020}
 }
 ```
-## An Example of Purification of Unseen Adversaries
-These adversaris are never seen by NRP during training. First row shows adversarial images while 2nd shows purified images.
-![a](/assets/robust_adv.jpg)
-![b](/assets/robust_adv_fixed.jpg)
 
 ## Contact
 Muzammal Naseer - muzammal.naseer@anu.edu.au 
 <br/>
 Suggestions and questions are welcome!
+
+
+## An Example of Purification of Unseen Adversaries
+These adversaris are never seen by NRP during training. First row shows adversarial images while 2nd shows purified images.
+![a](/assets/robust_adv.jpg)
+![b](/assets/robust_adv_fixed.jpg)
