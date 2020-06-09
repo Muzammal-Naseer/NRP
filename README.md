@@ -1,6 +1,6 @@
 # Self-supervised Approach for Adversarial Robustness
 
-Pytorch Implementation of "Self-supervised Approach for Adversarial Robustness" (CVPR 2020) ([arXiv link])(https://..).
+Pytorch Implementation of "Self-supervised Approach for Adversarial Robustness" (CVPR 2020, Oral) ([arXiv link])(https://..).
 
 ### Table of Contents  
 1) [Contributions](#Contributions) <a name="Contributions"/>
@@ -10,7 +10,11 @@ Pytorch Implementation of "Self-supervised Approach for Adversarial Robustness" 
 5) [How to purify Adversarial Images?](#purify) <a name="purify"/>
 6) [How to by-pass NRP using Straight through Estimation?](#by-pass-NRP)<a name="by-pass-NRP"/>
 7) [NRP as Dynamic Defense](#Dynamic-Defense)<a name="Dynamic-Defense"/>
-4) [Citation](#Citation)  <a name="Citation"/>
+8) [Citation](#Citation)  <a name="Citation"/>
+9) [What Can you do?](#What Can you do?)
+   * Can you create a blackbox attack (no knowldege of defense or backbone) powerful enough to break our defense
+   * Can you create a graybox attack (defense is known but no knowledge of architecture of NRP and its backbone) that can break our defense. We provide two purifier to test such attack. You can use one in your attack and then test on the other one.
+   * Can you break dynamic infernce.
 
 ## Contributions
 
@@ -40,18 +44,26 @@ Download pretrained purifiers from [here](https://drive.google.com/file/d/1qWqUS
 
 These purifiers are based desnet (around 14Million parameters) and ResNet (only 1.2Million parameters) based architecture. They output the purified sample of the same size of input.
 
+## How to purify Adversarial Images?
 You can create adversarial images by using [Cross-Domain Attack](https://github.com/Muzammal-Naseer/Cross-domain-perturbations) or any other attack of your choice. Once you have save the adversarial images then run the following command to purify them:
 
 ```
   python purify.py ----dir adv_images --purifier NRP
 ```
-
-
-## How to purify Adversarial Images?
+Purifiers are trained to handle $l_inf <=16$ but you can try $l_2$ bounded attacks as well
 
 ## How to by-pass NRP using Straight through Estimation?
+You can by-pass NRP using backpass method. We provide an example of such an attack using targetted PGD:
+```
+  python bypass_nrp.py ----test_dir val/ --purifier NRP --eps 16 --model_type res152
+```
 
 ## NRP as Dynamic Defense
+Dynamic inference can help against whitebox attacks. We use a very simple methdology: Perturbe the incoming sample with random noise and then purify it using NRP. The drawback is that we lose some clean accuracy.
+
+```
+  python purify.py ----dir adv_images --purifier NRP --dynamic
+```
 
 ## Citation
 
