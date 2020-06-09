@@ -5,7 +5,7 @@
 ### Table of Contents  
 1) [Contributions](#Contributions) <a name="Contributions"/>
 2) [Claims](#Claims) <a name="Claims"/>
-3) [How-to-run-SSP-Attack?](#How-to-run-SSP-Attack?) <a name="How-to-run-SSP-Attack?"/>
+3) [How to run SSP Attack?](#ssp) <a name="ssp"/>
 4) [Pretrained-Purifiers](#Pretrained-Purifier) <a name="Pretrained-Purifier"/>
 5) [How to purify Adversarial Images?](#purify) <a name="purify"/>
 6) [How to by-pass NRP using Straight through Estimation?](#by-pass-NRP)<a name="by-pass-NRP"/>
@@ -31,7 +31,7 @@ NRP can be used to defend against adversarial attacks under following threat mod
 2) Attacker knows about the defense but unaware of the NRP and backbone model architectures. Attacker trains a local copy of the defense and tries to bypass using e.g. straight through estimator method.
 3) **Can NRP defend against white-box attack?** Yes, but with dynamic inference. When attacker has full knowledge of the architecture and pretrained weights of NRP and its backbone model then attacker can by-pass the defense using e.g. straight thought estimation. In such case, we can add random noise before sending the input sample to NRP.
 
-## How-to-run-SSP-Attack?
+## How to run SSP Attack?
 You don't need to worry about labels, just save clean images in a directory and run the following command:
 ```
   python ssp.py ----sourcedir clean_imgs --eps 16 --iters 100
