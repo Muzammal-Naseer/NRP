@@ -1,6 +1,6 @@
-# Self-supervised Approach for Adversarial Robustness ([arXiv link](https://..))
+# Self-supervised Approach for Adversarial Robustness
 
-[Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Naseer_A_Self-supervised_Approach_for_Adversarial_Robustness_CVPR_2020_paper.pdf), [1-min Presentation](https://drive.google.com/file/d/1aXnRaZGcMZFbhIWKe3K6BiisYti75iOe/view?usp=sharing), [5-min Presentation](https://drive.google.com/file/d/1qUSC0KXPqRFtP5QB9Y70_ZKXqfDFmA7W/view?usp=sharing), [Poster](https://drive.google.com/file/d/1jpuXZZIhGpFrWcA8JvEzxqJ6A0kWphG2/view?usp=sharing)
+[Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Naseer_A_Self-supervised_Approach_for_Adversarial_Robustness_CVPR_2020_paper.pdf), [1-min Presentation](https://drive.google.com/file/d/1aXnRaZGcMZFbhIWKe3K6BiisYti75iOe/view?usp=sharing), [5-min Presentation](https://drive.google.com/file/d/1qUSC0KXPqRFtP5QB9Y70_ZKXqfDFmA7W/view?usp=sharing), [Poster](https://drive.google.com/file/d/1jpuXZZIhGpFrWcA8JvEzxqJ6A0kWphG2/view?usp=sharing), [arXiv link](https://..)
 
 ### Table of Contents  
 1) [Contributions](#Contributions) <a name="Contributions"/>
