@@ -1,6 +1,6 @@
 # Self-supervised Approach for Adversarial Robustness
 
-[Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Naseer_A_Self-supervised_Approach_for_Adversarial_Robustness_CVPR_2020_paper.pdf) ([arXiv link](https://..)), [1-min Presentation](https://drive.google.com/file/d/1aXnRaZGcMZFbhIWKe3K6BiisYti75iOe/view?usp=sharing), [5-min Presentation](https://drive.google.com/file/d/1qUSC0KXPqRFtP5QB9Y70_ZKXqfDFmA7W/view?usp=sharing), [Poster](https://drive.google.com/file/d/1jpuXZZIhGpFrWcA8JvEzxqJ6A0kWphG2/view?usp=sharing)
+[Paper](http://openaccess.thecvf.com/content_CVPR_2020/papers/Naseer_A_Self-supervised_Approach_for_Adversarial_Robustness_CVPR_2020_paper.pdf) ([arXiv link](https://arxiv.org/abs/2006.04924)), [1-min Presentation](https://drive.google.com/file/d/1aXnRaZGcMZFbhIWKe3K6BiisYti75iOe/view?usp=sharing), [5-min Presentation](https://drive.google.com/file/d/1qUSC0KXPqRFtP5QB9Y70_ZKXqfDFmA7W/view?usp=sharing), [Poster](https://drive.google.com/file/d/1jpuXZZIhGpFrWcA8JvEzxqJ6A0kWphG2/view?usp=sharing)
 
 ### Table of Contents  
 1) [Contributions](#Contributions) <a name="Contributions"/>
@@ -70,7 +70,7 @@ You can build on our work with the following objectives in mind:
    * Can you create a blackbox attack (no knowledge of defense or backbone) that is powerful enough to break our defense?
    * Can you create a graybox attack (defense is known but no knowledge of architecture of NRP and its backbone) that can break our defense. We provide two purifier to test such attack. You can use one in your attack and then test on the other one?
    * Can you break our dynamic inference?
-   * Can you prepare similar defense for [unrestricted attack](https://arxiv.org/abs/1807.01216).
+   * Can you prepare similar defense for [unrestricted attack](https://arxiv.org/abs/1807.01216)?
    
 ## Citation
 Please consider citing our work.
