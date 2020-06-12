@@ -34,7 +34,7 @@ NRP can be used to defend against adversarial attacks under following threat mod
 ## SSP
 You don't need to worry about labels, just save clean images in a directory and run the following command:
 ```
-  python ssp.py ----sourcedir clean_imgs --eps 16 --iters 100
+  python ssp.py --sourcedir clean_imgs --eps 16 --iters 100
 ```
 
 ## Pretrained
@@ -47,21 +47,21 @@ These purifiers are based desnet (around 14Million parameters) and ResNet (only 
 You can create adversarial images by using [Cross-Domain Attack](https://github.com/Muzammal-Naseer/Cross-domain-perturbations) or any other attack of your choice. Once you have save the adversarial images then run the following command to purify them:
 
 ```
-  python purify.py ----dir adv_images --purifier NRP
+  python purify.py --dir adv_images --purifier NRP
 ```
 Purifiers are trained to handle $l_inf <=16$ but you can try $l_2$ bounded attacks as well.
 
 ## BypassNRP
 You can by-pass NRP using backpass method. We provide an example of such an attack using targeted PGD:
 ```
-  python bypass_nrp.py ----test_dir val/ --purifier NRP --eps 16 --model_type res152
+  python bypass_nrp.py --test_dir val/ --purifier NRP --eps 16 --model_type res152
 ```
 
 ## Dynamic
 Dynamic inference can help against whitebox attacks. We use a very simple methodology: Perturbe the incoming sample with random noise and then purify it using NRP. The drawback is that we lose some clean accuracy.
 
 ```
-  python purify.py ----dir adv_images --purifier NRP --dynamic
+  python purify.py --dir adv_images --purifier NRP --dynamic
 ```
 
 
