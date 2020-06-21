@@ -65,7 +65,7 @@ Dynamic inference can help against whitebox attacks. We use a very simple method
 ```
 
 
-## What Can You Do 
+## What Can You Do? 
 **Future Resreach:**
 You can build on our work with the following objectives in mind:
    * Can you create a blackbox attack (no knowledge of defense or backbone) that is powerful enough to break our defense?
