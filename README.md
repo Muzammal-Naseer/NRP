@@ -5,7 +5,7 @@
 ### Table of Contents  
 1) [Contributions](#Contributions) <a name="Contributions"/>
 2) [Claims](#Claims) <a name="Claims"/>
-3) [How to run SSP Attack?](#SSP) <a name="SSP"/>
+3) [How to run SSP Attack?](#how-to-run-SSP-Attack)
 4) [Pretrained Purifiers](#Pretrained) <a name="Pretrained"/>
 5) [How to purify Adversarial Images?](#Purify) <a name="Purify"/>
 6) [How to by-pass NRP using Straight through Estimation?](#BypassNRP)<a name="BypassNRP"/>
