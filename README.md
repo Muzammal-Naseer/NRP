@@ -57,7 +57,7 @@ You can by-pass NRP using backpass method. We provide an example of such an atta
   python bypass_nrp.py --test_dir val/ --purifier NRP --eps 16 --model_type res152
 ```
 
-## NRP-as-Dynamic-Defense
+## NRP as Dynamic Defense
 Dynamic inference can help against whitebox attacks. We use a very simple methodology: Perturbe the incoming sample with random noise and then purify it using NRP. The drawback is that we lose some clean accuracy.
 
 ```
