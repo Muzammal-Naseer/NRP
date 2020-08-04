@@ -74,7 +74,7 @@ You can build on our work with the following objectives in mind:
    * Can you prepare similar defense for [unrestricted attack](https://arxiv.org/abs/1807.01216)?
    
 ## Citation
-Please consider citing our work.
+If you find our work and pretrained purifiers useful. Please consider citing our work.
 ```
 @InProceedings{Naseer_2020_CVPR,
 author = {Naseer, Muzammal and Khan, Salman and Hayat, Munawar and Khan, Fahad Shahbaz and Porikli, Fatih},
